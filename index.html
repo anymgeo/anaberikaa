@@ -1,0 +1,650 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ANABERIKA WINERY | HOME</title>
+    <link type="image/x-icon" rel="icon" href="images/berikaico.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/fonts/bpg-ingiri-arial.min.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        
+        <!--id="wrapper"-->
+        <header class="">
+            <div class="center">
+              <h4 class="testWeb">The site works in test mode</h4>
+                <h1>
+                
+                        <a href="index.html">AnaBerika Winery</a>
+               
+                </h1>
+                <nav>
+                    <div>
+                        <span class="bars">
+                            <span id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            მენიუ
+                        </span>
+                    </div>
+                    <ul>
+                        
+                        <li>
+                            <a style="cursor:pointer;" href="wine.html"><span>Wine</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="vineyard.html" ><span>Visit Us</span></a>
+                        
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="partners.html"><span>Partners</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="Contact.html"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <script type="text/javascript">
+                    $("nav div").click(function () {
+                        $("nav ul").slideToggle();
+                        $("nav ul ul").css("display", "none");
+                    });
+
+                    $(".bars").click(function () {
+                        var clicks = $(this).data('clicks');
+                        if (clicks) {
+                        } else {
+                            $("#nav-icon1").addClass("open");
+                        }
+                        $(this).data("clicks", !clicks);
+
+                    });
+                    $("nav ul li").click(function () {
+                        $("nav ul ul").slideUp();
+                        $(this).find('ul').slideToggle();
+                    });
+
+                    if ($(window).width() > 1220) {
+                        $("nav ul").removeAttr('style');
+
+                        $("nav > ul > li").click(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                        $("nav > ul > li").hover(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                    }
+                    $(window).resize(function () {
+                        if ($(window).width() > 1220) {
+                            $("nav ul").removeAttr('style');
+                            $("nav > ul > li").click(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                            $("nav > ul > li").hover(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                        }
+                    });
+                </script>
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="შეიყვანეთ საძიებო სიტყვა/სიტყვები ..." type="search"
+                            name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+
+
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch(document.getElementById('sb-search'));
+                </script>
+
+            </div>
+        </header>
+        <section id="sliderWrapper">
+            <div class="slider" id="slider" style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);"> 
+                <div class="slider__content" id="slider-content">
+                  <div class="slider__images">
+                    <div class="slider__images-item slider__images-item--active" data-id="1"><img src="images/slliderImage.jpeg"/></div>
+                    <div class="slider__images-item" data-id="2"><img src="images/tasteWine.jpg"/></div>
+                    <div class="slider__images-item" data-id="3"><img src="images/sliderImg.jpg"/></div>
+                    <div class="slider__images-item" data-id="4"><img src="images/sliderImgSecond.jpg"/></div>
+                    <div class="slider__images-item" data-id="5"><img src="images/sliderImg.jpg"/></div>
+                  </div>
+                  <div class="slider__text">
+                    <div class="slider__text-item slider__text-item--active" data-id="1">
+                      <div class="slider__text-item-head">
+                        <h3>Winery</h3>
+                      </div>
+                      <div class="slider__text-item-info">
+                        <p>“And into the vineyard I go, to lose my mind and find my soul”</p>
+                      </div>
+                    </div>
+                    <div class="slider__text-item" data-id="2">
+                      <div class="slider__text-item-head">
+                        <h3>wine</h3>
+                      </div>
+                      <div class="slider__text-item-info">
+                        <p>“wine description”</p>
+                      </div>
+                    </div>
+                    <div class="slider__text-item" data-id="3">
+                      <div class="slider__text-item-head">
+                        <h3>wine</h3>
+                      </div>
+                      <div class="slider__text-item-info">
+                        <p>“wine description”</p>
+                      </div>
+                    </div>
+                    <div class="slider__text-item" data-id="4">
+                      <div class="slider__text-item-head">
+                        <h3>wine</h3>
+                      </div>
+                      <div class="slider__text-item-info">
+                        <p>“wine description”</p>
+                      </div>
+                    </div>
+                    <div class="slider__text-item" data-id="5">
+                      <div class="slider__text-item-head">
+                        <h3>wine</h3>
+                      </div>
+                      <div class="slider__text-item-info">
+                        <p>“wine description”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__nav">
+                  <div class="slider__nav-arrows">
+                    <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+                    <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+                  </div>
+                  <div class="slider__nav-dots" id="slider-dots">
+                    <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+                    <div class="slider__nav-dot" data-id="2"></div>
+                    <div class="slider__nav-dot" data-id="3"></div>
+                    <div class="slider__nav-dot" data-id="4"></div>
+                    <div class="slider__nav-dot" data-id="5"></div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                function lerp({ x, y }, { x: targetX, y: targetY }) {
+              const fraction = 0.1;
+            
+              x += (targetX - x) * fraction;
+              y += (targetY - y) * fraction;
+            
+              return { x, y };
+            }
+            
+            class Slider {
+              constructor(el) {
+                const imgClass = this.IMG_CLASS = 'slider__images-item';
+                const textClass = this.TEXT_CLASS = 'slider__text-item';
+                const activeImgClass = this.ACTIVE_IMG_CLASS = `${imgClass}--active`;
+                const activeTextClass = this.ACTIVE_TEXT_CLASS = `${textClass}--active`;
+            
+                this.el = el;
+                this.contentEl = document.getElementById('slider-content');
+                this.onMouseMove = this.onMouseMove.bind(this);
+            
+                // taking advantage of the live nature of 'getElement...' methods
+                this.activeImg = el.getElementsByClassName(activeImgClass);
+                this.activeText = el.getElementsByClassName(activeTextClass);
+                this.images = el.getElementsByTagName('img');
+            
+                document.getElementById('slider-dots').
+                addEventListener('click', this.onDotClick.bind(this));
+            
+                document.getElementById('left').
+                addEventListener('click', this.prev.bind(this));
+            
+                document.getElementById('right').
+                addEventListener('click', this.next.bind(this));
+            
+                window.addEventListener('resize', this.onResize.bind(this));
+            
+                this.onResize();
+            
+                this.length = this.images.length;
+                this.lastX = this.lastY = this.targetX = this.targetY = 0;
+              }
+              onResize() {
+                const htmlStyles = getComputedStyle(document.documentElement);
+                const mobileBreakpoint = htmlStyles.getPropertyValue('--mobile-bkp');
+            
+                const isMobile = this.isMobile = matchMedia(
+                `only screen and (max-width: ${mobileBreakpoint})`).
+                matches;
+            
+                this.halfWidth = innerWidth / 2;
+                this.halfHeight = innerHeight / 2;
+                this.zDistance = htmlStyles.getPropertyValue('--z-distance');
+            
+                if (!isMobile && !this.mouseWatched) {
+                  this.mouseWatched = true;
+                  this.el.addEventListener('mousemove', this.onMouseMove);
+                  this.el.style.setProperty(
+                  '--img-prev',
+                  `url(${this.images[+this.activeImg[0].dataset.id - 1].src})`);
+            
+                  this.contentEl.style.setProperty('transform', `translateZ(${this.zDistance})`);
+                } else if (isMobile && this.mouseWatched) {
+                  this.mouseWatched = false;
+                  this.el.removeEventListener('mousemove', this.onMouseMove);
+                  this.contentEl.style.setProperty('transform', 'none');
+                }
+              }
+              getMouseCoefficients({ pageX, pageY } = {}) {
+                const halfWidth = this.halfWidth;
+                const halfHeight = this.halfHeight;
+                const xCoeff = ((pageX || this.targetX) - halfWidth) / halfWidth;
+                const yCoeff = (halfHeight - (pageY || this.targetY)) / halfHeight;
+            
+                return { xCoeff, yCoeff };
+              }
+              onMouseMove({ pageX, pageY }) {
+                this.targetX = pageX;
+                this.targetY = pageY;
+            
+                if (!this.animationRunning) {
+                  this.animationRunning = true;
+                  this.runAnimation();
+                }
+              }
+              runAnimation() {
+                if (this.animationStopped) {
+                  this.animationRunning = false;
+                  return;
+                }
+            
+                const maxX = 10;
+                const maxY = 10;
+            
+                const newPos = lerp({
+                  x: this.lastX,
+                  y: this.lastY },
+                {
+                  x: this.targetX,
+                  y: this.targetY });
+            
+            
+                const { xCoeff, yCoeff } = this.getMouseCoefficients({
+                  pageX: newPos.x,
+                  pageY: newPos.y });
+            
+            
+                this.lastX = newPos.x;
+                this.lastY = newPos.y;
+            
+                this.positionImage({ xCoeff, yCoeff });
+            
+                this.contentEl.style.setProperty('transform', `
+                  translateZ(${this.zDistance})
+                  rotateX(${maxY * yCoeff}deg)
+                  rotateY(${maxX * xCoeff}deg)
+                `);
+            
+                if (this.reachedFinalPoint) {
+                  this.animationRunning = false;
+                } else {
+                  requestAnimationFrame(this.runAnimation.bind(this));
+                }
+              }
+              get reachedFinalPoint() {
+                const lastX = ~~this.lastX;
+                const lastY = ~~this.lastY;
+                const targetX = this.targetX;
+                const targetY = this.targetY;
+            
+                return (lastX == targetX || lastX - 1 == targetX || lastX + 1 == targetX) && (
+                lastY == targetY || lastY - 1 == targetY || lastY + 1 == targetY);
+              }
+              positionImage({ xCoeff, yCoeff }) {
+                const maxImgOffset = 1;
+                const currentImage = this.activeImg[0].children[0];
+            
+                currentImage.style.setProperty('transform', `
+                  translateX(${maxImgOffset * -xCoeff}em)
+                  translateY(${maxImgOffset * yCoeff}em)
+                `);
+              }
+              onDotClick({ target }) {
+                if (this.inTransit) return;
+            
+                const dot = target.closest('.slider__nav-dot');
+            
+                if (!dot) return;
+            
+                const nextId = dot.dataset.id;
+                const currentId = this.activeImg[0].dataset.id;
+            
+                if (currentId == nextId) return;
+            
+                this.startTransition(nextId);
+              }
+              transitionItem(nextId) {
+                function onImageTransitionEnd(e) {
+                  e.stopPropagation();
+            
+                  nextImg.classList.remove(transitClass);
+            
+                  self.inTransit = false;
+            
+                  this.className = imgClass;
+                  this.removeEventListener('transitionend', onImageTransitionEnd);
+                }
+            
+                const self = this;
+                const el = this.el;
+                const currentImg = this.activeImg[0];
+                const currentId = currentImg.dataset.id;
+                const imgClass = this.IMG_CLASS;
+                const textClass = this.TEXT_CLASS;
+                const activeImgClass = this.ACTIVE_IMG_CLASS;
+                const activeTextClass = this.ACTIVE_TEXT_CLASS;
+                const subActiveClass = `${imgClass}--subactive`;
+                const transitClass = `${imgClass}--transit`;
+                const nextImg = el.querySelector(`.${imgClass}[data-id='${nextId}']`);
+                const nextText = el.querySelector(`.${textClass}[data-id='${nextId}']`);
+            
+                let outClass = '';
+                let inClass = '';
+            
+                this.animationStopped = true;
+            
+                nextText.classList.add(activeTextClass);
+            
+                el.style.setProperty('--from-left', nextId);
+            
+                currentImg.classList.remove(activeImgClass);
+                currentImg.classList.add(subActiveClass);
+            
+                if (currentId < nextId) {
+                  outClass = `${imgClass}--next`;
+                  inClass = `${imgClass}--prev`;
+                } else {
+                  outClass = `${imgClass}--prev`;
+                  inClass = `${imgClass}--next`;
+                }
+            
+                nextImg.classList.add(outClass);
+            
+                requestAnimationFrame(() => {
+                  nextImg.classList.add(transitClass, activeImgClass);
+                  nextImg.classList.remove(outClass);
+            
+                  this.animationStopped = false;
+                  this.positionImage(this.getMouseCoefficients());
+            
+                  currentImg.classList.add(transitClass, inClass);
+                  currentImg.addEventListener('transitionend', onImageTransitionEnd);
+                });
+            
+                if (!this.isMobile)
+                this.switchBackgroundImage(nextId);
+              }
+              startTransition(nextId) {
+                function onTextTransitionEnd(e) {
+                  if (!e.pseudoElement) {
+                    e.stopPropagation();
+            
+                    requestAnimationFrame(() => {
+                      self.transitionItem(nextId);
+                    });
+            
+                    this.removeEventListener('transitionend', onTextTransitionEnd);
+                  }
+                }
+            
+                if (this.inTransit) return;
+            
+                const activeText = this.activeText[0];
+                const backwardsClass = `${this.TEXT_CLASS}--backwards`;
+                const self = this;
+            
+                this.inTransit = true;
+            
+                activeText.classList.add(backwardsClass);
+                activeText.classList.remove(this.ACTIVE_TEXT_CLASS);
+                activeText.addEventListener('transitionend', onTextTransitionEnd);
+            
+                requestAnimationFrame(() => {
+                  activeText.classList.remove(backwardsClass);
+                });
+              }
+              next() {
+                if (this.inTransit) return;
+            
+                let nextId = +this.activeImg[0].dataset.id + 1;
+            
+                if (nextId > this.length)
+                nextId = 1;
+            
+                this.startTransition(nextId);
+              }
+              prev() {
+                if (this.inTransit) return;
+            
+                let nextId = +this.activeImg[0].dataset.id - 1;
+            
+                if (nextId < 1)
+                nextId = this.length;
+            
+                this.startTransition(nextId);
+              }
+              switchBackgroundImage(nextId) {
+                function onBackgroundTransitionEnd(e) {
+                  if (e.target === this) {
+                    this.style.setProperty('--img-prev', imageUrl);
+                    this.classList.remove(bgClass);
+                    this.removeEventListener('transitionend', onBackgroundTransitionEnd);
+                  }
+                }
+            
+                const bgClass = 'slider--bg-next';
+                const el = this.el;
+                const imageUrl = `url(${this.images[+nextId - 1].src})`;
+            
+                el.style.setProperty('--img-next', imageUrl);
+                el.addEventListener('transitionend', onBackgroundTransitionEnd);
+                el.classList.add(bgClass);
+              }}
+            
+            
+            const sliderEl = document.getElementById('slider');
+            const slider = new Slider(sliderEl);
+            
+            // ------------------ Demo stuff ------------------------ //
+            
+            let timer = 0;
+            
+            function autoSlide() {
+              requestAnimationFrame(() => {
+                slider.next();
+              });
+            
+              timer = setTimeout(autoSlide, 5000);
+            }
+            
+            function stopAutoSlide() {
+              clearTimeout(timer);
+            
+              this.removeEventListener('touchstart', stopAutoSlide);
+              this.removeEventListener('mousemove', stopAutoSlide);
+            }
+            
+            sliderEl.addEventListener('mousemove', stopAutoSlide);
+            sliderEl.addEventListener('touchstart', stopAutoSlide);
+            
+            timer = setTimeout(autoSlide, 2000);
+              </script>
+        </div>
+            <!--End of class="slideshow"-->
+        </section>
+        <section id="indexPage">  
+         <div class="center"><!-- <div class="center"> -->
+          <div class="travelDiv">
+            <div class="leftTravel">
+              <a href="vineyard.html">
+              <h3>Trip to <span>Anaberika's</span> vineyard</h3>
+              
+              <h5>Welcome to our picturesque vineyard, where nature's beauty intertwines with the art of winemaking. Step into a world of sensory delights as you immerse yourself in our vineyard's enchanting ambiance.
+                <span>Indulge in the symphony of flavors that await you, as our passionate winemaker craft the finest wines. From the rich reds that dance on your palate to the crisp whites that refresh your senses, each sip tells a story of dedication and expertise.</span> 
+                <span>Unwind and relax in our inviting outdoor terrace, where you can bask in the gentle breeze while relishing a carefully curated lunch menu. Our talented chefs craft delectable dishes using locally sourced ingredients, perfectly paired with our wines, elevating your senses to new heights.</span>
+              </h5>
+            <h4 class="bookNow"> Read More
+            </h4>
+          </a>
+            </div>
+            <div class="rightTravel">
+              <div class="travelImage">
+           <a href="vineyard.html">
+            <img src="/images/tasteWine.jpg"/>
+
+           </a>
+          </div>
+            </div>
+
+          </div>
+          <div class="textWhy">
+            <h2>Why Anaberika winery?</h2>
+            <div class="whySpaces">
+              <div class="whyBoxes">
+                <h3>Personalized Hospitality: <span>
+                  Indulge in Berika Winery's exceptional hospitality. Our dedicated team takes pride in providing warm, tailored service. From personalized tastings to knowledgeable staff, we ensure your visit is memorable. Experience the art of hospitality as we create unforgettable moments for you</span></h3>
+              </div>
+              <div class="whyBoxes">
+                <h3>Unforgettable Experiences: <span> Immerse yourself in lasting memories with Berika Winery's unique events. From vibrant harvest festivals to idyllic vineyard picnics, each gathering promises enchanting moments and unforgettable connections.</span></h3>
+              </div>
+              <div class="whyBoxes">
+                <h3>Culinary Delights: <span>Embark on a tantalizing journey of flavors at Berika Winery. Indulge in delectable food pairings carefully curated to complement our exquisite wines, creating a symphony of tastes that transforms each sip into a culinary feast. Immerse yourself in a gastronomic adventure where the art of wine and food harmoniously unite, leaving you with an unforgettable dining experience that lingers on your palate and in your memory.</span></h3>
+              </div> 
+              <div class="whyBoxes">
+                <h3>Spectacular Scenery:  <span>Unwind amidst breathtaking landscapes enveloping Berika Winery, enhancing the allure of your visit. Immerse yourself in nature's picturesque embrace as vineyards unfold before your eyes, painting a captivating backdrop for your wine experience. Let the stunning vistas awaken your senses, as the beauty of rolling hills, vibrant vine rows, and sun-kissed horizons infuse every moment with an enchanting charm. Whether strolling through the vineyards or savoring a glass of wine on a terrace overlooking the panoramic views, the spectacular scenery at Berika Winery creates an ambiance that transports you to a world of serenity and awe-inspiring beauty.</span></h3>
+              </div> 
+              <div class="whyBoxes">
+                <h3>Corporate Events and Team Building:  <span> Elevate your corporate gatherings with unforgettable experiences at Berika Winery. From hosting memorable corporate events to engaging team-building activities, our picturesque venue fosters camaraderie and sparks creativity in a unique and inspiring setting. Whether it's a conference, a product launch, or a team retreat, our dedicated team will assist in tailoring every detail to meet your specific objectives and create an impactful event. With stunning vineyard views as a backdrop, your team can bond over wine tastings, vineyard tours, and interactive workshops, strengthening relationships and igniting fresh ideas. Let Berika Winery be the canvas for your next corporate endeavor, where professional success merges seamlessly with the pleasures of wine, fostering a productive and memorable experience for all. </span></h3>
+              </div>
+              <div class="whyBoxes">
+                <h3>Customized Wine Labels and Gifts  <span>Elevate your corporate gifting and branding initiatives with Berika Winery's personalized touch. Our customized wine labels offer a unique opportunity to create impactful gifts for clients, partners, or employees. Tailor the label design to showcase your brand logo, message, or a special occasion, leaving a lasting impression. Whether it's a token of appreciation, a promotional item, or a gesture of celebration, our team will assist in selecting the perfect wine and crafting a label that reflects your vision. From elegant corporate events to branded gift sets, our customized wine labels and gifts add a touch of exclusivity and personalization, reinforcing your brand identity and strengthening relationships. Let Berika Winery be your partner in creating memorable, branded experiences that leave a lasting mark in the hearts and minds of your recipients.</span></h3>
+              </div>
+
+            </div>
+
+          </div>
+         
+          <div class="offerBlank">
+       
+            <div class="offerBlock"><!-- <div class="offerblock> -->
+              <a href="contact.html">
+              <div class="imageBlock">
+                <img src="images/tasteWine.jpg" alt="#"/>
+              </div>
+              <div class="TextArea">
+                <h2>Wine Tasting</h2>
+                <h3>Visit the winery with an experienced guide to understand the rich Georgian wine culture and taste local wines.</h3>
+                <div class="priceList">
+                <h5> 30.00 ₾</h5>
+                <h4 class="readMore"> Book now </h4>
+</div>
+              </div>
+            </a> 
+          </div><!-- <div class="offerBlock> -->  
+            <div class="offerBlock"><!-- <div class="offerblock> -->
+              <a href="vineyard.html">
+              <div class="imageBlock">
+                <img src="images/sliderImg.jpg" alt="#"/>
+              </div>
+              <div class="TextArea">
+                <h2>Wine Tasting and lunch</h2>
+                <h3>Visit the winery with an experienced guide to understand the rich Georgian wine culture and taste local wines.</h3>
+                <div class="priceList">
+                <h5>80.00 ₾</h5>
+                <h4 class="readMore"> Book now </h4>
+</div>
+              </div>
+            </a> 
+          </div><!-- <div class="offerBlock> --> 
+            <div class="offerBlock"><!-- <div class="offerblock> -->
+              <a href="contact.html">
+              <div class="imageBlock">
+                <img src="images/sliderImgSecond.jpg" alt="#"/>
+              </div>
+              <div class="TextArea">
+                <h2> Wine Tasting</h2>
+                <h3>Join us for a guided winery visit and immerse yourself in the rich Georgian wine culture. Discover traditional winemaking techniques and indulge in tasting local wines. Price per person varies. Cheers </h3>
+                <div class="priceList">
+                <h5 class="forGroups">Individually</h5>
+                <h4 class="readMore"> Book now</h4>
+</div>
+              </div>
+            </a>
+          </div><!-- <div class="offerBlock> -->
+            
+          </div><!-- <div class="offerblank> -->
+         </div><!-- <div class="center"> -->
+  
+        </section>
+        <footer id="footerWrapper">
+            <div class="center"><!-- <div class="center"> -->
+                <div class="leftFooter"><!-- <div class="leftFooter"> -->
+                  <div class="footerText"> <!-- <div class="footerText"> -->
+                    <h4>anaberika winery</h4>
+                    <h5>Our winery is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</h5>
+                    <div class="socialLogos">
+                        <ul>
+                            <li><a target_blank href="facebook.com/anonymousgeo" title="Facebook">Facebook</a></li>
+                            <li><a href="#" title="Twiter">Twiter</a></li>
+                            <li><a href="#" title="Gmail">Gmail</a></li>
+                        </ul>
+                    </div>
+                  </div> <!-- <div class="footerText"> -->
+                </div><!-- <div class="leftFooter"> -->
+            
+           <div class="rightFooter"><!-- <div class="rightFooter"> -->
+            <div class="usefulLinks"><!-- <div class="usefulLinks"> -->
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Delivery Terms</a></li>
+                </ul>
+            </div><!-- <div class="usefulLinks"> -->
+                <div class="aboutUs"> <!-- <div class="aboutUs"> -->
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">News | Blog</a></li>
+                    </ul>
+                </div> <!-- <div class="aboutUs"> -->
+                    <div class="contactInfo"><!-- <div class="contactInfo"> -->
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><a href="tel:+995598394108">Call Owner</a></li>
+                            <li><a href="#">store@berika.info</a></li>
+                            
+                        </ul>
+                    </div><!-- <div class="contactInfo"> -->
+           </div><!-- <div class="rightFooter"> -->
+        </div><!-- <div class="center"> -->
+        </footer>
+        <!-- End of id="footerWrapper"  -->
+    <!--End of id="wrapper"-->
+    </section>
+
+</body>
+
+</html>

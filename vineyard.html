@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ANABERIKA WINERY | VISIT US </title>
+    <link type="image/x-icon" rel="icon" href="images/berikaico.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/fonts/bpg-ingiri-arial.min.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        
+        <!--id="wrapper"-->
+        <header class="">
+            <div class="center">
+              <h4 class="testWeb">The site works in test mode</h4>
+                <h1>
+                
+                        <a href="index.html">ANABERIKA WINERY</a>
+               
+                </h1>
+                <nav>
+                    <div>
+                        <span class="bars">
+                            <span id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            მენიუ
+                        </span>
+                    </div>
+                    <ul>
+                        
+                        <li>
+                            <a style="cursor:pointer;" href="wine.html"><span>Wine</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="vineyard.html" ><span>Visit Us</span></a>
+                        
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="partners.html"><span>Partners</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="Contact.html"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <script type="text/javascript">
+                    $("nav div").click(function () {
+                        $("nav ul").slideToggle();
+                        $("nav ul ul").css("display", "none");
+                    });
+
+                    $(".bars").click(function () {
+                        var clicks = $(this).data('clicks');
+                        if (clicks) {
+                        } else {
+                            $("#nav-icon1").addClass("open");
+                        }
+                        $(this).data("clicks", !clicks);
+
+                    });
+                    $("nav ul li").click(function () {
+                        $("nav ul ul").slideUp();
+                        $(this).find('ul').slideToggle();
+                    });
+
+                    if ($(window).width() > 1220) {
+                        $("nav ul").removeAttr('style');
+
+                        $("nav > ul > li").click(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                        $("nav > ul > li").hover(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                    }
+                    $(window).resize(function () {
+                        if ($(window).width() > 1220) {
+                            $("nav ul").removeAttr('style');
+                            $("nav > ul > li").click(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                            $("nav > ul > li").hover(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                        }
+                    });
+                </script>
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="შეიყვანეთ საძიებო სიტყვა/სიტყვები ..." type="search"
+                            name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+
+
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch(document.getElementById('sb-search'));
+                </script>
+
+            </div>
+        </header>
+    
+        
+        <section id="indexPage" >  
+          <div class="center"><!-- <div class="center"> -->
+           <div class="travelDiv innerTravel">
+             <div class="leftTravel">
+             <div class="innerText">
+               <h3>Trip to <span>Anaberika's</span> vineyard</h3>
+               
+               
+              <p>
+                Welcome to our picturesque vineyard, where nature's beauty intertwines with the art of winemaking. Step into a world of sensory delights as you immerse yourself in our vineyard's enchanting ambiance.
+              </p>
+              <p>Indulge in the symphony of flavors that await you, as our passionate winemaker crafts the finest wines. Our vineyard boasts an impressive selection of varietals, including Kisi, Rkatsiteli, Mtsvane, Rkatsiteli Mtsvane, Saperavi, and Luna. Each wine is meticulously crafted, showcasing the unique characteristics of the local terroir and the expertise of our winemaking team. From the rich reds that dance on your palate to the crisp whites that refresh your senses, each sip tells a story of dedication and expertise.</p>
+               
+               <p>
+                Unwind and relax in our inviting outdoor terrace, where you can bask in the gentle breeze while relishing a carefully curated lunch menu. Our talented chefs are passionate about showcasing the flavors of the region. They skillfully craft delectable dishes using locally sourced ingredients, ensuring a farm-to-table experience that celebrates the bounty of the land. For those seeking traditional Kakhetian dishes, we offer a range of options such as Badrijani (eggplant rolls with walnut paste), Mtsvadi (grilled meat skewers), and Khinkali (dumplings filled with meat or vegetarian options). We also cater to vegan and gluten-free dietary preferences, offering a variety of delicious plant-based dishes that are sure to delight.
+               </p>
+               <p>
+                As you dine, each dish is thoughtfully paired with our wines, creating a harmonious fusion of flavors. Whether you're enjoying a glass of our velvety Saperavi with a perfectly seared steak or savoring the delicate notes of our Mtsvane alongside a refreshing salad, the combination of food and wine elevates your senses to new heights.
+               </p>
+               <p>
+                Immerse yourself in the beauty of our vineyard, where every aspect is designed to create a memorable experience. From the moment you arrive, you'll be greeted by stunning vistas, lush vineyards, and a sense of tranquility that envelops the air. Whether you're a wine enthusiast or simply seeking a moment of respite, our vineyard offers a sanctuary where you can connect with nature, indulge in exceptional wines, and savor the flavors of Kakhetian cuisine.
+
+Come join us in this sensory journey and discover the magic that awaits you at our vineyard.
+               </p>
+
+            
+           </div>
+             </div>
+             <div class="rightTravel">
+               <div class="travelImage">
+            <a href="vineyard.html">
+             <img src="/images/tasteWine.jpg"/>
+ 
+            </a>
+           </div>
+             </div>
+ 
+           </div>
+           <div class="textWhy">
+             <h2>We can also offer you the option you want</h2>
+             <div class="whySpaces">
+               <div class="whyBoxes">
+                <a href="#">
+                 <h3>Wine Tasting Offer <span>
+                 Embark on a sensory journey with our wine tasting experience. 
+                 Sample a selection of our exquisite wines, guided by our knowledgeable sommeliers.
+                  Discover the nuances of each vintage and indulge in a delightful exploration of flavors. 
+                  Uncover the stories behind the wines as you savor the artistry in every sip. Join us for an unforgettable wine tasting adventure at Berika Winery.</span></h3>
+                  <h4>Read More</h4>
+                </a> 
+               </div>
+               <div class="whyBoxes">
+                <a href="#">
+                 <h3>Wine Tasting with Lunch<span>Immerse yourself in a complete wine and culinary experience with our wine tasting paired with a delectable lunch. Delight in the harmonious fusion of our wines and expertly
+                   crafted dishes, carefully curated to complement and enhance each other's flavors. Indulge in the rich textures, aromatic delights, and exceptional pairings that await you. Elevate your taste buds
+                    to new heights as you embark on this unforgettable journey of wine and gastronomy at Berika Winery.</span></h3>
+                    <h4>Read More</h4>
+                  </a>
+               </div>
+               <div class="whyBoxes">
+                <a href="#">
+                 <h3>
+                  Individually Tailored Wine Tasting: <span>Embark on a personalized wine tasting journey at Berika Winery. Experience a one-on-one tasting session curated just for you, guided by our knowledgeable sommeliers. Discover the unique characteristics of our exceptional wines as you delve into their flavors, aromas, and stories. Whether you're a wine enthusiast seeking in-depth knowledge or a curious novice eager to explore, our sommeliers will cater to your preferences and provide expert insights. Immerse yourself in a relaxed and intimate setting as you savor the artistry in each glass. Indulge in the pleasure of an individually tailored wine tasting experience at Berika Winery, where every sip is a moment of discovery.</span></h3>
+                    <h4>Read More</h4>
+                  </a>
+               </div> 
+               
+ 
+             </div>
+ 
+           </div>
+          
+           
+          </div><!-- <div class="center"> -->
+   
+         </section>
+        <footer id="footerWrapper">
+            <div class="center"><!-- <div class="center"> -->
+                <div class="leftFooter"><!-- <div class="leftFooter"> -->
+                  <div class="footerText"> <!-- <div class="footerText"> -->
+                    <h4>anaberika winery</h4>
+                    <h5>Our winery is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</h5>
+                    <div class="socialLogos">
+                        <ul>
+                            <li><a href="facebook.com/anonymousgeo" title="Facebook">Facebook</a></li>
+                            <li><a href="#" title="Twiter">Twiter</a></li>
+                            <li><a href="#" title="Gmail">Gmail</a></li>
+                        </ul>
+                    </div>
+                  </div> <!-- <div class="footerText"> -->
+                </div><!-- <div class="leftFooter"> -->
+            
+           <div class="rightFooter"><!-- <div class="rightFooter"> -->
+            <div class="usefulLinks"><!-- <div class="usefulLinks"> -->
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Delivery Terms</a></li>
+                </ul>
+            </div><!-- <div class="usefulLinks"> -->
+                <div class="aboutUs"> <!-- <div class="aboutUs"> -->
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">News | Blog</a></li>
+                    </ul>
+                </div> <!-- <div class="aboutUs"> -->
+                    <div class="contactInfo"><!-- <div class="contactInfo"> -->
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><a href="tell:+995598394108">Call Owner</a></li>
+                            <li><a href="#">store@berika.info</a></li>
+                        </ul>
+                    </div><!-- <div class="contactInfo"> -->
+           </div><!-- <div class="rightFooter"> -->
+        </div><!-- <div class="center"> -->
+        </footer>
+        <!-- End of id="footerWrapper"  -->
+    <!--End of id="wrapper"-->
+    </section>
+
+</body>
+
+</html>

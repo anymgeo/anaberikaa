@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ANABERIKA WINERY | CONTACT </title>
+    <link type="image/x-icon" rel="icon" href="images/berikaico.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/fonts/bpg-ingiri-arial.min.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        
+        <!--id="wrapper"-->
+        <header class="">
+            <div class="center">
+              <h4 class="testWeb">The site works in test mode</h4>
+                <h1>
+                
+                        <a href="index.html">ANABERIKA WINERY</a>
+               
+                </h1>
+                <nav>
+                    <div>
+                        <span class="bars">
+                            <span id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            მენიუ
+                        </span>
+                    </div>
+                    <ul>
+                        
+                        <li>
+                            <a style="cursor:pointer;" href="wine.html"><span>Wine</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="vineyard.html" ><span>Visit Us</span></a>
+                        
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="partners.html"><span>Partners</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="Contact.html"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <script type="text/javascript">
+                    $("nav div").click(function () {
+                        $("nav ul").slideToggle();
+                        $("nav ul ul").css("display", "none");
+                    });
+
+                    $(".bars").click(function () {
+                        var clicks = $(this).data('clicks');
+                        if (clicks) {
+                        } else {
+                            $("#nav-icon1").addClass("open");
+                        }
+                        $(this).data("clicks", !clicks);
+
+                    });
+                    $("nav ul li").click(function () {
+                        $("nav ul ul").slideUp();
+                        $(this).find('ul').slideToggle();
+                    });
+
+                    if ($(window).width() > 1220) {
+                        $("nav ul").removeAttr('style');
+
+                        $("nav > ul > li").click(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                        $("nav > ul > li").hover(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                    }
+                    $(window).resize(function () {
+                        if ($(window).width() > 1220) {
+                            $("nav ul").removeAttr('style');
+                            $("nav > ul > li").click(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                            $("nav > ul > li").hover(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                        }
+                    });
+                </script>
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="შეიყვანეთ საძიებო სიტყვა/სიტყვები ..." type="search"
+                            name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+
+
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch(document.getElementById('sb-search'));
+                </script>
+
+            </div>
+        </header>
+    
+        
+        <section id="indexPage" >  
+          <div class="center"><!-- <div class="center"> -->
+           <div class="travelDiv innerTravel">
+             <div class="leftTravel">
+             <div class="innerText">
+               <h3>Ana Berikashvili</h3>
+               
+               
+              <p>
+                Ana Berikashvili is a successful entrepreneur and the owner of Anaberika Winery. She is also a graduate of GIPA (Georgian Institute of Public Affairs) with a degree in Public Administration. Ana's journey in the wine industry began with a passion for viticulture and a desire to create exceptional wines.
+              </p>
+              <p>
+                After completing her studies at GIPA, Ana ventured into the world of winemaking. She founded Anaberika Winery, which has since gained recognition for producing high-quality wines. The winery is known for its dedication to traditional winemaking methods while also embracing innovation and modern techniques.
+              </p>
+               <p>Throughout her career, Ana has demonstrated a deep understanding of the intricacies of winemaking, from grape cultivation to fermentation and aging processes. She has honed her expertise in crafting unique and expressive wines that showcase the richness and diversity of Georgian terroir.
+            </p>
+               <p>Ana Berikashvili's commitment to excellence has earned her a reputation as a respected figure in the wine industry. Her wines have garnered accolades both domestically and internationally, contributing to the overall growth and recognition of Georgian wines on the global stage.</p>
+               <p>
+                In addition to her entrepreneurial pursuits, Ana actively participates in industry events, conferences, and wine exhibitions. She engages with fellow winemakers, industry professionals, and wine enthusiasts to promote Georgian wines and share her knowledge and experiences.
+
+As a prominent figure in the wine industry, Ana Berikashvili continues to contribute to the development and promotion of Georgian winemaking, combining her passion for wine with her expertise in public administration.
+               </p>
+
+            
+           </div>
+             </div>
+             <div class="rightTravel">
+               <div class="travelImage">
+            <a href="vineyard.html">
+             <img src="/images/anaphoto.jpg"/>
+ 
+            </a>
+           </div>
+             </div>
+ 
+           </div>
+           <div class="textWhy">
+             <h2>If you have a question, contact me</h2>
+             <div class="whySpaces">
+               <div class="whyBoxes ana">
+                <a target="_blank" href="https://www.google.com/maps/place/RQ6J%2BF42+ბერიკა,+ველისციხე/@41.8111367,45.7802645,17z/data=!4m6!3m5!1s0x40467f1cbb0f091b:0xaec252556c5667e1!8m2!3d41.8111367!4d45.7802645!16s%2Fg%2F11lc35m3g5">
+                 <h3 >Adress<span>Velistsikhe (Georgian: ველისციხე) is a village in Georgia. It is located in the Gurjaani Municipality of Kakheti. It is located 380 metres (1,250 ft) above sea level.
+                 </span></h3>
+                  <h4 class="forAdress">View on the map</h4>
+                </a> 
+               </div>
+               <div class="whyBoxes ana">
+               
+                 <h3>contact<span>Reservation Assistance – Call or Email for Official Booking</span></h3>
+                 <div class="forContactButtons">
+                    <h4><a href="tel:598394108" >Mobile</a></h4>
+                    <h5><a href="mailto:anaberikashvili8@gmail.com">E-Mail</a></h5>
+                  </div>
+               </div>
+               <div class="whyBoxes ana">
+              
+                 <h3>
+                    Find me social media apps <span>If you're interested in discovering the captivating Anaberika Winery, complete with its latest photos and updates, I invite you to accompany me on an extraordinary journey. Prepare yourself for a truly luxurious experience as we delve into the world of exceptional wines and picturesque landscapes.</span></h3>
+                    <div class="forContactButtons">
+                        <h4><a target="_blank" href="https://www.facebook.com/berikawinery">Facebook</a></h4>
+                        <h5><a target="_blank" href="https://www.instagram.com/berika_winery">Instagram</a></h5>
+                      
+                    </div>
+                  
+               </div> 
+               
+ 
+             </div>
+ 
+           </div>
+          
+           
+          </div><!-- <div class="center"> -->
+   
+         </section>
+        <footer id="footerWrapper">
+            <div class="center"><!-- <div class="center"> -->
+                <div class="leftFooter"><!-- <div class="leftFooter"> -->
+                  <div class="footerText"> <!-- <div class="footerText"> -->
+                    <h4>anaberika winery</h4>
+                    <h5>Our winery is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</h5>
+                    <div class="socialLogos">
+                        <ul>
+                            <li><a href="facebook.com/anonymousgeo" title="Facebook">Facebook</a></li>
+                            <li><a href="#" title="Twiter">Twiter</a></li>
+                            <li><a href="#" title="Gmail">Gmail</a></li>
+                        </ul>
+                    </div>
+                  </div> <!-- <div class="footerText"> -->
+                </div><!-- <div class="leftFooter"> -->
+            
+           <div class="rightFooter"><!-- <div class="rightFooter"> -->
+            <div class="usefulLinks"><!-- <div class="usefulLinks"> -->
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Delivery Terms</a></li>
+                </ul>
+            </div><!-- <div class="usefulLinks"> -->
+                <div class="aboutUs"> <!-- <div class="aboutUs"> -->
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">News | Blog</a></li>
+                    </ul>
+                </div> <!-- <div class="aboutUs"> -->
+                    <div class="contactInfo"><!-- <div class="contactInfo"> -->
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><a href="tell:+995598394108">Call Owner</a></li>
+                            <li><a href="#">store@berika.info</a></li>
+                        </ul>
+                    </div><!-- <div class="contactInfo"> -->
+           </div><!-- <div class="rightFooter"> -->
+        </div><!-- <div class="center"> -->
+        </footer>
+        <!-- End of id="footerWrapper"  -->
+    <!--End of id="wrapper"-->
+    </section>
+
+</body>
+
+</html>

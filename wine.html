@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ANABERIKA WINERY | WINE </title>
+    <link type="image/x-icon" rel="icon" href="images/berikaico.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/fonts/bpg-ingiri-arial.min.css">
+</head>
+<script>
+  function displaySpecies(id) {
+    // Hide all other divs
+    var divs = document.querySelectorAll('.wineSpecies div');
+    for (var i = 0; i < divs.length; i++) {
+      divs[i].style.display = 'none';
+      console.log()
+    }
+
+    // Show the selected div
+    var div = document.querySelector('#' + id + '-div');
+    if (div) {
+      div.style.display = 'block';
+    }
+  }
+</script>
+
+<body>
+    <section id="wrapper">
+        
+        <!--id="wrapper"-->
+        <header class="">
+            <div class="center">
+              <h4 class="testWeb">The site works in test mode</h4>
+                <h1>
+                
+                        <a href="index.html">anaBerika Winery </a>
+               
+                </h1>
+                <nav>
+                    <div>
+                        <span class="bars">
+                            <span id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            მენიუ
+                        </span>
+                    </div>
+                    <ul>
+                        
+                        <li>
+                            <a style="cursor:pointer;" href="wine.html"><span>Wine</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="vineyard.html" ><span>Visit Us</span></a>
+                        
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="partners.html"><span>Partners</span></a>
+                        </li>
+                        <li>
+                            <a style="cursor:pointer;" href="Contact.html"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <script type="text/javascript">
+                    $("nav div").click(function () {
+                        $("nav ul").slideToggle();
+                        $("nav ul ul").css("display", "none");
+                    });
+
+                    $(".bars").click(function () {
+                        var clicks = $(this).data('clicks');
+                        if (clicks) {
+                        } else {
+                            $("#nav-icon1").addClass("open");
+                        }
+                        $(this).data("clicks", !clicks);
+
+                    });
+                    $("nav ul li").click(function () {
+                        $("nav ul ul").slideUp();
+                        $(this).find('ul').slideToggle();
+                    });
+
+                    if ($(window).width() > 1220) {
+                        $("nav ul").removeAttr('style');
+
+                        $("nav > ul > li").click(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                        $("nav > ul > li").hover(function () {
+                            $("nav ul ul").removeAttr('style');
+                        });
+                    }
+                    $(window).resize(function () {
+                        if ($(window).width() > 1220) {
+                            $("nav ul").removeAttr('style');
+                            $("nav > ul > li").click(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                            $("nav > ul > li").hover(function () {
+                                $("nav ul ul").removeAttr('style');
+                            });
+                        }
+                    });
+                </script>
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="შეიყვანეთ საძიებო სიტყვა/სიტყვები ..." type="search"
+                            name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+
+
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch(document.getElementById('sb-search'));
+                </script>
+
+            </div>
+        </header>
+        <section id="wineCategory">
+          <div class="center">
+            <div class="wineSpecies">
+              <button id="Rkatsiteli" type="button" onclick="displaySpecies('Rkatsiteli')">Rkatsiteli</button>
+              <button id="Sapheravi" type="button" onclick="displaySpecies('Sapheravi')">Sapheravi</button>
+              <button id="Kisi" type="button" onclick="displaySpecies('Kisi')">Kisi</button>
+              <button id="Mtsvane" type="button" onclick="displaySpecies('Mtsvane')">Mtsvane</button>
+              <button id="Rkatsiteli/Mtsvane" type="button" onclick="displaySpecies('Rkatsiteli-Mtsvane')">Rkatsiteli/Mtsvane</button>
+              <button id="Luna" type="button" onclick="displaySpecies('Luna')">Luna</button>
+            </div>
+          </div>
+      <div class="center">
+          <div id="Rkatsiteli-div" class="species-content">
+              <h2>Rkatsiteli</h2>
+              <div class="speciesPararagh">
+                <div class="speciesImg">
+                <img src="/images/kisiwine.jpg"/>
+                </div>
+              
+                <h4>რქაწითელი ქვევრი<span>(Origin  Name)</span></h4>
+                <ul class="wineSpec">
+                  <li><span>Volume</span> 750ml</li>
+                  <li><span>Alcohol</span>12.5%</li>
+                  <li><span>Color</span> Amber</li>
+                  <li><span>Aroma</span> White Ripe Fruit</li>
+                  <li><span>Taste</span> Body With Tanins</li>
+                  <li><span>Technology</span>Qvevri</li>
+                  <li><span>Vintage Year</span> 2019</li>
+                </ul>
+                <h5>Our Methods</h5>
+                
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+  
+                  Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                  
+                  In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                </p> 
+                <h5>vinification</h5>
+                
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+  
+                  Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                  
+                  In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                </p>
+                
+                <!-- <div class="forQuantity">
+                  <form>
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-input">
+                      <button class="minus-btn" type="button" name="button">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <input type="text" id="quantity" name="quantity" value="1">
+                      <button class="plus-btn" type="button" name="button">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="submitClick">
+                    <button type="submit">Add to Cart</button>
+                  </div>
+                  </form>
+                </div> -->
+              </div>
+           
+
+            </div>
+            <div id="Sapheravi-div" class="species-content" style="display:none;">
+              <h2>Sapheravi</h2>
+              <div class="speciesPararagh">
+                <div class="speciesImg">
+                <img src="/images/kisiwine.jpg"/>
+                </div>
+              
+                <h4>საფერავი<span>(Origin  Name)</span></h4>
+                <ul class="wineSpec">
+                  <li><span>Volume</span> 750ml</li>
+                  <li><span>Alcohol</span>12.5%</li>
+                  <li><span>Color</span> Amber</li>
+                  <li><span>Aroma</span> White Ripe Fruit</li>
+                  <li><span>Taste</span> Body With Tanins</li>
+                  <li><span>Technology</span>Qvevri</li>
+                  <li><span>Vintage Year</span> 2019</li>
+                </ul>
+                
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+  
+                  Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                  
+                  In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                </p>
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+                </p>
+              </div> 
+              <!-- <div class="forQuantity">
+                <form>
+                  <label for="quantity">Quantity:</label>
+                  <div class="quantity-input">
+                    <button class="minus-btn" type="button" name="button">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input type="text" id="quantity" name="quantity" value="1">
+                    <button class="plus-btn" type="button" name="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <button type="submit">Add to Car</button>
+                </form>
+              </div> -->
+
+            </div>
+            <div id="Kisi-div" class="species-content" style="display:none;">
+              <h2>Kisi</h2>
+              <div class="speciesPararagh">
+                <div class="speciesImg">
+                <img src="/images/kisiwine.jpg"/>
+                </div>
+              
+                <h4>ქისი<span>(Origin  Name)</span></h4>
+                <ul class="wineSpec">
+                  <li><span>Volume</span> 750ml</li>
+                  <li><span>Alcohol</span>12.5%</li>
+                  <li><span>Color</span> Amber</li>
+                  <li><span>Aroma</span> White Ripe Fruit</li>
+                  <li><span>Taste</span> Body With Tanins</li>
+                  <li><span>Technology</span>Qvevri</li>
+                  <li><span>Vintage Year</span> 2019</li>
+                </ul>
+                
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+  
+                  Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                  
+                  In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                </p>
+                <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+                </p>
+              </div>
+
+              </div>
+              <div id="Mtsvane-div" class="species-content" style="display:none;">
+                <h2>Mtsvane</h2>
+                <div class="speciesPararagh">
+                  <div class="speciesImg">
+                  <img src="/images/berikamtsvane.jpg"/>
+                  </div>
+                
+                  <h4>კახური მწვანე<span>(Origin  Name)</span></h4>
+                  <ul class="wineSpec">
+                    <li><span>Volume</span> 750ml</li>
+                    <li><span>Alcohol</span>12.5%</li>
+                    <li><span>Color</span> Amber</li>
+                    <li><span>Aroma</span> White Ripe Fruit</li>
+                    <li><span>Taste</span> Body With Tanins</li>
+                    <li><span>Technology</span>Qvevri</li>
+                    <li><span>Vintage Year</span> 2019</li>
+                  </ul>
+                  <h5>Our Methods</h5>
+                  
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+    
+                    Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                    
+                    In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                  </p> 
+                  <h5>vinification</h5>
+                  
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+    
+                    Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                    
+                    In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                  </p>
+                  
+                </div>
+                  
+
+              </div>
+              <div id="Rkatsiteli-Mtsvane-div" class="species-content" style="display:none;">
+                <h2>Rkatsiteli</h2>
+                <div class="speciesPararagh">
+                  <div class="speciesImg">
+                  <img src="/images/kisiwine.jpg"/>
+                  </div>
+                
+                  <h4>რქაწითელი/მწვანე<span>(Origin  Name)</span></h4>
+                  <ul class="wineSpec">
+                    <li><span>Volume</span> 750ml</li>
+                    <li><span>Alcohol</span>12.5%</li>
+                    <li><span>Color</span> Amber</li>
+                    <li><span>Aroma</span> White Ripe Fruit</li>
+                    <li><span>Taste</span> Body With Tanins</li>
+                    <li><span>Technology</span>Qvevri</li>
+                    <li><span>Vintage Year</span> 2019</li>
+                  </ul>
+                  
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+    
+                    Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                    
+                    In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                  </p>
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+                  </p>
+                </div></div>
+              <div id="Luna-div" class="species-content" style="display:none;"><h2>Rkatsiteli</h2>
+                <div class="speciesPararagh">
+                  <div class="speciesImg">
+                  <img src="/images/kisiwine.jpg"/>
+                  </div>
+                
+                  <h4>ლუნა<span>(Origin  Name)</span></h4>
+                  <ul class="wineSpec">
+                    <li><span>Volume</span> 750ml</li>
+                    <li><span>Alcohol</span>12.5%</li>
+                    <li><span>Color</span> Amber</li>
+                    <li><span>Aroma</span> White Ripe Fruit</li>
+                    <li><span>Taste</span> Body With Tanins</li>
+                    <li><span>Technology</span>Qvevri</li>
+                    <li><span>Vintage Year</span> 2019</li>
+                  </ul>
+                  
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+    
+                    Rkatsiteli was the most widely planted grape variety in the Soviet Union and, by 1978, was responsible for 18% of all Soviet wine production.[2] There it was used to make everything from table wine to liqueurs to Sherry-like fortified wine. Before President Gorbachev's vine pull scheme, it was possibly the world's most widely planted white wine grape.[3]
+                    
+                    In Kakheti it was particularly known for its sweet dessert wines fashioned in the same manner as port wine. There were many attempts to create a sparkling wine from the grape, but its naturally high alcohol levels prevented it from being much of a success.[1]
+                  </p>
+                  <p>This ancient vinifera originates in Georgia and is supposed to be one of the oldest grape varieties.[1]
+                  </p>
+                </div></div>
+            </div>
+         
+          </div>
+        </section>
+        <footer id="footerWrapper">
+          <div class="center"><!-- <div class="center"> -->
+              <div class="leftFooter"><!-- <div class="leftFooter"> -->
+                <div class="footerText"> <!-- <div class="footerText"> -->
+                  <h4>anaberika winery</h4>
+                  <h5>Our winery is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</h5>
+                  <div class="socialLogos">
+                      <ul>
+                          <li><a href="facebook.com/anonymousgeo" title="Facebook">Facebook</a></li>
+                          <li><a href="#" title="Twiter">Twiter</a></li>
+                          <li><a href="#" title="Gmail">Gmail</a></li>
+                      </ul>
+                  </div>
+                </div> <!-- <div class="footerText"> -->
+              </div><!-- <div class="leftFooter"> -->
+          
+         <div class="rightFooter"><!-- <div class="rightFooter"> -->
+          <div class="usefulLinks"><!-- <div class="usefulLinks"> -->
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Delivery Terms</a></li>
+              </ul>
+          </div><!-- <div class="usefulLinks"> -->
+              <div class="aboutUs"> <!-- <div class="aboutUs"> -->
+                  <h3>About Us</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">News | Blog</a></li>
+                  </ul>
+              </div> <!-- <div class="aboutUs"> -->
+                  <div class="contactInfo"><!-- <div class="contactInfo"> -->
+                      <h3>Contact Info</h3>
+                      <ul>
+                          <li><a href="tel:+995598394108">Call Owner</a></li>
+                          <li><a href="#">store@berika.info</a></li>
+                      </ul>
+                  </div><!-- <div class="contactInfo"> -->
+         </div><!-- <div class="rightFooter"> -->
+      </div><!-- <div class="center"> -->
+      </footer>
+      
+      
+   </section>
+        <script>
+        function displaySpecies(id) {
+  // Hide all species content divs
+  var speciesContentDivs = document.querySelectorAll('.species-content');
+  for (var i = 0; i < speciesContentDivs.length; i++) {
+    speciesContentDivs[i].style.display = 'none';
+  }
+
+  // Show the selected species content div
+  var selectedSpeciesContentDiv = document.querySelector('#' + id + '-div');
+  selectedSpeciesContentDiv.style.display = 'block';
+}
+
+          </script> 
+          <script>
+            var minusButton = document.querySelector(".minus-btn");
+var plusButton = document.querySelector(".plus-btn");
+var quantityInput = document.querySelector("#quantity");
+
+minusButton.addEventListener("click", function() {
+  var currentValue = Number(quantityInput.value);
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  }
+});
+
+plusButton.addEventListener("click", function() {
+  var currentValue = Number(quantityInput.value);
+  quantityInput.value = currentValue + 1;
+});
+          </script>
+       
+</body>
+
+
+</html>
